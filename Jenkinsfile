@@ -1,12 +1,9 @@
 pipeline {
-    agent any
-
+    agent { dockerfile true }
     stages {
-        
-        stage('Build') {
+        stage('Test') {
             steps {
-                echo 'Building..'
-                sh ('docker-compose up -d')
+                sh 'node --version'
             }
         }
     }
