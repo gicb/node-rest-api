@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'pwd'
-                sh 'sleep(5)'
-                sh 'ls -la'
+                sh "pwd"
+                sh "sleep(5)"
+                sh "ls -la"
             }
         }
     }
