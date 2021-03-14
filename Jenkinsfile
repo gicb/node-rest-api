@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo "$$$$$$$$$$$$$$$$$$$$$$$$$$"'
+                sh 'pwd'
                 sh 'sleep(5)'
-                sh 'echo "PPPPPPPPPPPPPPPPPPPPPPPPPPP"'
+                sh 'ls -la'
             }
         }
     }
