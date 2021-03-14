@@ -1,10 +1,10 @@
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker { image 'node:14-alpine' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'echo "$$$$$$$$$$$$$$$$$$$$$$$$$$"'
                 sh 'sleep(5)'
                 sh 'echo "PPPPPPPPPPPPPPPPPPPPPPPPPPP"'
             }
