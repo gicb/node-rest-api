@@ -1,8 +1,6 @@
 pipeline {
     options { buildDiscarder(logRotator(numToKeepStr: '1')) }
-    agent { 
-    dockerfile true
-    }
+    agent { dockerfile true  }
     stages {	
         stage('Deploy') {
             when {
