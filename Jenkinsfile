@@ -1,8 +1,7 @@
 pipeline {
+    options { buildDiscarder(logRotator(numToKeepStr: '1')) }
     agent { 
-    dockerfile {
-        args '-t Rest-Api'
-    }
+    dockerfile true
     }
     stages {	
         stage('Deploy') {
