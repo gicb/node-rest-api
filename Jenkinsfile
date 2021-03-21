@@ -1,9 +1,9 @@
 pipeline {
     agent { 
-		dockerfile {
-					args '-t node-Rest-Api'
-				   }
-		  }
+    dockerfile {
+        args '-t Rest-Api'
+    }
+    }
     stages {	
         stage('Deploy') {
             when {
