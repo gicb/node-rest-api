@@ -1,8 +1,7 @@
 pipeline {
     agent { 
 		dockerfile {
-					image "node-rest-api"
-                    args '-t node-Rest-Api'
+					args '-t node-Rest-Api'
 				   }
 		  }
     stages {	
