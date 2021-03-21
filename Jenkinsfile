@@ -2,7 +2,7 @@ pipeline {
     agent { 
 		dockerfile {
 					true
-					image "node-rest-api:${env.BUILD_ID}"
+					image "node-rest-api"
 				   }
 		  }
     stages {	
