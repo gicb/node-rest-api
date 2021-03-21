@@ -1,13 +1,10 @@
 version: "3.1"
 
 services:
-  db:
-    container_name: mongoDB
-    image: mongo:latest
+  rest-api:
+    build:
+      context: .
+    image: rest-api
     restart: always
-    volumes:
-      - ./data:/data/db
-    environment:
-      - MONGO_INITDB_DATABASE= rest_api
-    ports:
-      - 27017:27017
+#    environment:
+#      - PORT: '3000'

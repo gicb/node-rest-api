@@ -5,6 +5,7 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "ts-node ./src/server.ts",
+		"dev": "ts-node ./src/ts.ts",
 		"build": "tsc"
 	},
 	"keywords": [
